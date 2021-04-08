@@ -7,8 +7,9 @@ import csv
 
 # python3 -m pip install np
 import numpy as np
+# access the figure canvas as an RGB string and then convert it to an array and pass it to Pillow for rendering
 matplotlib.use('Agg')
-# sudo apt install python3-tk
+# collection of functions that make matplotlib work
 import matplotlib.pyplot as plt
 
 

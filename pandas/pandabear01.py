@@ -48,10 +48,8 @@ def main():
     # we can remove them quickly with the .drop_duplicates() method
     # this returns a dataframe, or None if .drop_duplicates(inplace=True)
     movies.drop_duplicates(inplace=True)
-    
     # take a peek at how our dataframe changed after removing duplicates
     print(movies.shape)
-    
     # sort DataFrame based on Gross Earnings
     sorted_by_gross = movies.sort_values(["Gross Earnings"], ascending=False)
 
@@ -62,8 +60,11 @@ def main():
 
     # create a stacked bar graph
     sorted_by_gross['Gross Earnings'].head(10).plot(kind="barh")
+    # export dataframe to excel spreadsheet
+    movies.to_excel('/home/student/static/myexcel.xls')
     # save the figure as stackedbar.png
     plt.savefig("/home/student/static/stackedbar.png", bbox_inches='tight')
-
+    print("Graph created.")
+    print("Excel spreadsheet created.")
 if __name__ == "__main__":
     main()
