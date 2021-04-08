@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+"""JCOpinaldo | Creating Objects From Scratch"""
+
 from random import randint
 
 class Player:
