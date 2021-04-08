@@ -1,5 +1,5 @@
 #!/bin/usr/env/python3
-"""JC | Using Classes"""
+"""JC :: Using Classes"""
 
 from cheatdice import *
 swapper = Cheat_Swapper()
